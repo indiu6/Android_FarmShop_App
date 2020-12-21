@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/browse_farms"
+        android:icon="@drawable/menuicon1"
+        android:title="@string/menu_option_1" />
+
+    <item
+        android:id="@+id/search_product"
+        android:icon="@drawable/menuicon2"
+        android:title="@string/menu_option_2" />
+
+    <item
+        android:id="@+id/search_farm"
+        android:icon="@drawable/menuicon3"
+        android:title="@string/menu_option_3" />
+
+    <item
+        android:id="@+id/special_offers"
+        android:icon="@drawable/menuicon4"
+        android:title="@string/menu_option_4" />
+</menu>

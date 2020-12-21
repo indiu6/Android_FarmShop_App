@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="274dp"
+                android:layout_height="503dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                app:srcCompat="@drawable/logo_mfs" />
+
+            <TextView
+                android:id="@+id/textInstructions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="500dp"
+                android:layout_marginEnd="30dp"
+                android:gravity="center_horizontal"
+                android:text="Please, tap on menu button on upper left corner for options"
+                android:textColor="#159186"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:theme="@style/NavigationDrawerStyle"
+        android:id="@+id/nav_view"
+        app:headerLayout="@layout/header"
+
+        android:background="@color/white"
+        app:itemTextColor="@color/darkGray"
+        app:itemIconTint="@color/darkGray"
+
+        app:menu="@menu/drawermenu"
+        android:layout_gravity="start"
+
+        />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+
